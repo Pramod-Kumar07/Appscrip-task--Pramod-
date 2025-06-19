@@ -1,0 +1,67 @@
+.shopContainer {
+  padding-inline: 6rem;
+  padding-bottom: 3rem;
+  color: #252020;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+  border-block: 1px solid #e5e5e5;
+  margin-bottom: 2rem;
+}
+
+.countWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 20%;
+}
+
+.count {
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.filterButton {
+  font-family: Adobe Caslon Pro;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #888792;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.productsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+}
+
+.filterContainer {
+  width: 20%;
+}

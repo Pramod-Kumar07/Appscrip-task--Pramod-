@@ -1,0 +1,53 @@
+.dropdown {
+  position: relative;
+  padding-inline: 36px;
+  color: #252020;
+}
+
+.selected {
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.optionWrapper {
+  position: absolute;
+  top: 3rem;
+  left: -2rem;
+  background: white;
+  width: 235px;
+  height: 324px;
+  z-index: 100;
+  box-shadow: 0px 0px 7px 1px #a3aaaf33;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: end;
+  padding: 1.5rem 2.5rem;
+}
+
+.option {
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: right;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: 700;
+}

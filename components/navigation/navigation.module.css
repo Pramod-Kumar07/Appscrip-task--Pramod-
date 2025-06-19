@@ -1,0 +1,85 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logoWrapper {
+  padding: 2.25rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logoText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.humburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.humburger button {
+  all: unset;
+  cursor: pointer;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.language_dropdown {
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+.linkWrapper {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 767px) {
+  .logoWrapper {
+    padding: 1rem;
+  }
+}

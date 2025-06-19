@@ -1,0 +1,87 @@
+.filterWrapper {
+  width: 250px;
+  color: #252020;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.checkboxContainer input {
+  width: 22px;
+  height: 22px;
+  border-radius: 0;
+}
+
+.checkboxLabel {
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.filterSection {
+  border-bottom: 1px solid #e5e5e5;
+  padding-block: 1.5rem;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.unselectAll {
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  cursor: pointer;
+  color: #bfc8cd;
+  margin-top: 1.5rem;
+}
+
+.optionLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.allText {
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin-top: 0.5rem;
+}
