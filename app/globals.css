@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Simplon Norm";
+  src: url("/fonts/SimplonNorm.ttf");
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -22,6 +28,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Simplon Norm", sans-serif;
 }
 
 * {

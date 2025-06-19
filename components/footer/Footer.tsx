@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./footer.module.css";
 import ContactUs from "./ContactUs";
 import { AiFillInstagram } from "react-icons/ai";
@@ -6,14 +6,6 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { PaymentIcons } from "../icons";
 
 const Footer = () => {
-  const [expandedSection, setExpandedSection] = useState(null);
-
-  const toggleSection = (section: any) => {
-    setExpandedSection((prev) => (prev === section ? null : section));
-  };
-
-  const isMobile = window.innerWidth < 768;
-
   return (
     <footer className={styles.footer}>
       <ContactUs />

@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 
 export const useIsMobileView = (width = 767) => {
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= width);
+  const [isMobileView, setIsMobileView] = useState(
+    typeof window !== "undefined" ? window.innerWidth <= width : false
+  );
 
   useEffect(() => {
     function handleResize() {
