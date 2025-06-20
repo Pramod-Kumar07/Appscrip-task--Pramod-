@@ -1,0 +1,145 @@
+.footerWrapper {
+  background-color: #000000;
+  padding: 1.5rem 1rem;
+  color: #ffffff;
+}
+
+.header {
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 60%;
+  height: 47px;
+  padding: 14px 24px;
+  gap: 8px;
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #bfc8cd;
+  flex-grow: 1;
+}
+
+.button {
+  border: 1px solid #ffffff;
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 47px;
+  width: 20%;
+  opacity: 0.3;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 14.5px;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+}
+
+.callus {
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.contactsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact {
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.bottom {
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.paymentIconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.titleWrapper {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.elementsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dropdown {
+  background-color: transparent;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ffffff;
+}

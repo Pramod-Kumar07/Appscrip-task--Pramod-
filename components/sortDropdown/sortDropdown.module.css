@@ -51,3 +51,18 @@
 .active {
   font-weight: 700;
 }
+
+@media (max-width: 760px) {
+  .selected {
+    font-size: 14px;
+  }
+
+  .optionWrapper {
+    left: 0;
+    right: 0;
+  }
+
+  .option {
+    font-size: 14px;
+  }
+}

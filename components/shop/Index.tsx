@@ -10,8 +10,11 @@ import Filter from "../filter/Filter";
 import Footer from "../footer/Footer";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import SortDropdown from "../sortDropdown/SortDropdown";
+import { useIsMobileView } from "../utils/useMobileView";
+import MobileFooter from "../mobileFooter/MobileFooter";
 
 const Shop = () => {
+  const isMobile = useIsMobileView();
   const { data, error, isLoading } = useFetch();
   const [isFilter, setIsFilter] = useState(false);
   return (
@@ -20,27 +23,40 @@ const Shop = () => {
       <div className={styles.shopContainer}>
         {isLoading && <Loader />}
         {error && <Error message={error} />}
-        <div className={styles.headerWrapper}>
-          <div className={styles.countWrapper}>
-            <span className={styles.count}>
-              {(data as any)?.length || 0} Items
-            </span>
+        {isMobile ? (
+          <div className={styles.mobileHeaderWrapper}>
             <span
-              className={styles.filterButton}
+              className={styles.filterText}
               onClick={() => setIsFilter(!isFilter)}
             >
-              <MdKeyboardArrowLeft
-                size={16}
-                style={{
-                  transform: isFilter ? "rotate(0deg)" : "rotate(180deg)",
-                  transition: "transform 0.3s ease",
-                }}
-              />
-              {isFilter ? "Hide Filter" : "Show Filter"}
+              Filter
             </span>
+            <div className={styles.divider}></div>
+            <SortDropdown />
           </div>
-          <SortDropdown />
-        </div>
+        ) : (
+          <div className={styles.headerWrapper}>
+            <div className={styles.countWrapper}>
+              <span className={styles.count}>
+                {(data as any)?.length || 0} Items
+              </span>
+              <span
+                className={styles.filterButton}
+                onClick={() => setIsFilter(!isFilter)}
+              >
+                <MdKeyboardArrowLeft
+                  size={16}
+                  style={{
+                    transform: isFilter ? "rotate(0deg)" : "rotate(180deg)",
+                    transition: "transform 0.3s ease",
+                  }}
+                />
+                {isFilter ? "Hide Filter" : "Show Filter"}
+              </span>
+            </div>
+            <SortDropdown />
+          </div>
+        )}
         <div className={styles.container}>
           {isFilter && (
             <div className={styles.filterContainer}>
@@ -56,7 +72,7 @@ const Shop = () => {
           )}
         </div>
       </div>
-      <Footer />
+      {isMobile ? <MobileFooter /> : <Footer />}
     </div>
   );
 };
